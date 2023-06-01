@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <h1>Bienvenido a mi sistema</h1>
+    <h2>Acceso solo al personal de TI</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <form>
+            <div class="mb-3">
+              <label for="nombreProducto" class="form-label"
+                >Ingrese el nombre del producto</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nombreProducto"
+                name="nombreProducto"
+                aria-describedby="nombreHelp"
+              />
+              <div id="nombreHelp" class="form-text">
+                Ingrese el nombre completo de su producto para agregarlo al
+                inventario
+              </div>
+            </div>
+
+            <button onclick="Add()" type="submit" class="btn btn-success" id="AddButton"">Agregar</button>
+          </form>
+        </div>
+        <div class="col-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Taza</td>
+                <td>$45</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Termo</td>
+                <td>$150</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Agenda</td>
+                <td>$80</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="ProyectoB.js"></script>
+  </body>
+</html>
